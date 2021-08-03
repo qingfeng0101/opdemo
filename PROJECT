@@ -1,0 +1,19 @@
+domain: ydzs.io
+layout:
+- go.kubebuilder.io/v3
+plugins:
+  manifests.sdk.operatorframework.io/v2: {}
+  scorecard.sdk.operatorframework.io/v2: {}
+projectName: opdemo
+repo: github.com/qingfeng0101/opdemo
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: ydzs.io
+  group: app
+  kind: Myapp
+  path: github.com/qingfeng0101/opdemo/api/v1beta1
+  version: v1beta1
+version: "3"

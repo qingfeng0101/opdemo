@@ -1,0 +1,12 @@
+apiVersion: app.ydzs.io/v1beta1
+kind: Myapp
+metadata:
+  name: myapp-sample
+spec:
+  # Add fields here
+  size: 3
+  image: harbor.cdd.group/library/nginx:v8
+  ports:
+  - port: 80
+    targetPort: 80
+    nodePort: 31111
